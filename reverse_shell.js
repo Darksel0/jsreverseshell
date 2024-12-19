@@ -1,4 +1,4 @@
-// coded by darksel0  ....2024
+// coded by darksel0  ....2025
 //https://github.com/Darksel0
 //hackforums.net username:darkosel
 var callbackUrl = "http://127.0.0.1:80/";

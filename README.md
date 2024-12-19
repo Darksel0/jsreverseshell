@@ -1,4 +1,4 @@
-# jsreverseshell
+# javascript_shell
 # How to use it:
 (python3)
 # Start command: python server.py on your machine

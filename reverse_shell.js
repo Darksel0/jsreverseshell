@@ -36,8 +36,8 @@ function main() {
                 postRequest.send(result);
             }
         } catch (e) {
-            // Handle any exceptions silently
-            // Optional: You could log the error to a file or ignore completely
+            
+           
         }
     }
 }

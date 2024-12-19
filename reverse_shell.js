@@ -1,4 +1,7 @@
-var callbackUrl = "http://127.0.0.4:80/";
+// coded by darksel0  ....2024
+//https://github.com/Darksel0
+//hackforums.net username:darkosel
+var callbackUrl = "http://127.0.0.1:80/";
 
 function main() {
     var breakLoop = false;
